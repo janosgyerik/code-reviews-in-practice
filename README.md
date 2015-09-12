@@ -2,132 +2,68 @@ Code reviews in practice
 ========================
 
 *This is a work in progress.*
-*If you have some specific ideas or questions,
-feel free to create an issue and I'll try to include it.*
+*If you have some specific ideas or questions, feel free to create an issue and I'll try to include it.*
 
-What is code review?
-How does it work?
-There are many interpretations, implementations and misconceptions.
+What is code review? How does it work? There are many interpretations, implementations and misconceptions.
 
-In this document I explain one way of doing it,
-that's simple, practical and has minimal administrative overhead.
-The benefits are cost savings, improved quality of code, improved collaboration and team morale.
+In this document I explain one way of doing it, that's simple, practical and has minimal administrative overhead. The benefits are cost savings, improved quality of code, improved collaboration and team morale.
 
-My goal with this document is to become a handbook that anybody can use to implement the practices of code reviews in their teams efficiently,
-to realize its benefits easily.
+My goal with this document is to become a handbook that anybody can use to implement the practices of code reviews in their teams efficiently, to realize its benefits easily.
 
 What is code review?
 --------------------
 
-In the context of this document,
-code review is about getting your changes reviewed by another programmer before merging it into the main code base of a project.
-Ideally the reviewer is on the same team and has a good understanding of the project.
-But it could be any other programmer.
-It's crucial to have *somebody else* review your work.
-There can be multiple reviewers,
-but there should be at least one.
+In the context of this document, code review is about getting your changes reviewed by another programmer before merging it into the main code base of a project. Ideally the reviewer is on the same team and has a good understanding of the project. But it could be any other programmer. It's crucial to have *somebody else* review your work. There can be multiple reviewers, but there should be at least one.
 
-The review is an iterative process:
-the reviewer suggests improvements,
-you make corrections,
-and the reviewer checks again.
-Repeat until the code looks good enough (to the reviewer).
+The review is an iterative process: the reviewer suggests improvements, you make corrections, and the reviewer checks again. Repeat until the code looks good enough (to the reviewer).
 
 The code review workflow
 ------------------------
 
 In a nutshell:
 
-- The project advances forward through short-lived feature branches
+- The project advances forward through short-lived feature branches.
 
-- You implement a specific change in a series of commits on a dedicated feature branch,
-  and propose it for merging to another developer
+- You implement a specific change in a series of commits on a dedicated feature branch, and propose it for merging to another developer.
 
-- The other developer reviews the changeset,
-  and suggests improvements by leaving comments on specific lines,
-  or on the changeset as a whole
+- The other developer reviews the changeset, and suggests improvements by leaving comments on specific lines, or on the changeset as a whole.
 
-- Following the suggestions,
-  you improve the changeset and push the new commits for another round of review
+- Following the suggestions, you improve the changeset and push the new commits for another round of review.
 
-- The review + corrections cycle repeats until the reviewer is satisfied,
-  and accepts the changeset into mainline
+- The review + corrections cycle repeats until the reviewer is satisfied, and accepts the changeset into mainline.
 
 Some crucial points:
 
-- The practice of short-lived feature branches is a prerequisite.
-  If the team doesn't follow this recommended working style,
-  then code reviews may not be feasible.
+- The practice of short-lived feature branches is a prerequisite. If the team doesn't follow this recommended working style, then code reviews may not be feasible.
 
-- It's important to use a tool like GitHub, GitLab, or similar,
-  where commenting on specific lines is easy,
-  with a user-friendly interface.
+- It's important to use a tool like GitHub, GitLab, or similar, where commenting on specific lines is easy, with a user-friendly interface.
 
-- The review process should not hold up development.
-  You can work on another branch while waiting for the review.
-  This implies that developers should be comfortable with working on multiple branches in parellel.
+- The review process should not hold up development. You can work on another branch while waiting for the review. This implies that developers should be comfortable with working on multiple branches in parallel.
 
 Some common misconceptions:
 
-- Myth: "we don't have time for code reviews".
-  To understand the time cost of code reviews,
-  you need to consider the long-term effects.
-  Correcting bugs released in production can be extremely expensive.
-  Code reviews are known to be an effective method to catch bugs early.
-  They also help catching conceptual errors early,
-  which would be extremely expensive to correct later.
-  Code reviews have many other positive effects that feed back to cost savings.
-  Overall, code reviews save far more time than they cost.
+- Myth: "we don't have time for code reviews". To understand the time cost of code reviews, you need to consider the long-term effects. Correcting bugs released in production can be extremely expensive. Code reviews are known to be an effective method to catch bugs early. They also help catching conceptual errors early, which would be extremely expensive to correct later. Code reviews have many other positive effects that feed back to cost savings. Overall, code reviews save far more time than they cost.
 
-- Myth: "code review is just too hard to do,
-  because it's impossible to review large changesets".
-  The problem is not with the idea of code reviews,
-  but with the changesets.
-  Such changesets indicate incorrect use of feature branches.
-  Keep changesets to manageable size.
+- Myth: "code review is just too hard to do, because it's impossible to review large changesets". The problem is not with the idea of code reviews, but with the changesets. Such changesets indicate incorrect use of feature branches. Keep changesets to manageable size.
 
-- Myth: "doing code reviews slows down development,
-  because the reviewer keeps the developer waiting".
-  No, the developers shouldn't wait for the review.
-  They should know how to work on another branch.
-  The other branch may be a continuation of the branch pending review.
+- Myth: "doing code reviews slows down development, because the reviewer keeps the developer waiting". No, the developers shouldn't wait for the review. They should know how to work on another branch. The other branch may be a continuation of the branch pending review.
 
-- Myth: "it's impossible to read diffs".
-  It's not impossible.
-  It may take a couple of days,
-  but you can get used to it.
+- Myth: "it's impossible to read diffs". It's not impossible. It may take a couple of days, but you can get used to it.
 
 Is my team ready for code reviews?
 ----------------------------------
 
-It's important to evaluate the readiness of your team first.
-Trying to push code reviews may fail spectacularly if the team is not yet following certain good practices.
+It's important to evaluate the readiness of your team first. Trying to push code reviews may fail spectacularly if the team is not yet following certain good practices.
 
-- One commit == one logical change.
-  Developers should have the good sense to commit each logical step by step,
-  going from stable build to stable build.
-  Try to educate the team: committing this way is widely recommended.
+- One commit == one logical change. Developers should have the good sense to commit each logical step by step, going from stable build to stable build. Try to educate the team: committing this way is widely recommended.
 
-- Development advances forward through short-lived feature branches.
-  Feature branches are the crucial unit of work in the workflow outlined above.
-  Try to transition the team to this working style.
+- Development advances forward through short-lived feature branches. Feature branches are the crucial unit of work in the workflow outlined above. Try to transition the team to this working style.
 
-- Using distributed version control system.
-  Without a distributed version control system,
-  branch management might be too hard to be practical.
-  Try to migrate your tools to any of the well-known distributed VCS.
+- Using distributed version control system. Without a distributed version control system, branch management might be too hard to be practical. Try to migrate your tools to any of the well-known distributed VCS.
 
-- Developers are open-minded, curious,
-  and willing to learn from their peers.
-  They can take their egos out of the equation,
-  able to both give and take constructive criticism.
-  Reading Chapter 33 in Code Complete might help achieving that.
+- Developers are open-minded, curious, and willing to learn from their peers. They can take their egos out of the equation, able to both give and take constructive criticism. Reading Chapter 33 in Code Complete might help achieving that.
 
-Without the above, code reviews are unlikely to work well.
-Try to get the above issues out of the way.
-Rest assured, these are all recommended and widely accepted practices that any project would benefit from,
-regardless of using code reviews or not.
-Be patient and calm, keep pushing, inching forward step by step.
+Without the above, code reviews are unlikely to work well. Try to get the above issues out of the way. Rest assured, these are all recommended and widely accepted practices that any project would benefit from, regardless of using code reviews or not. Be patient and calm, keep pushing, inching forward step by step.
 
 Resources
 ---------
@@ -141,8 +77,6 @@ I was most inspired by these articles:
 To be continued...
 ------------------
 
-More sections are coming soon with more details.
-For example, practical tips & tricks about our process in my teams.
+More sections are coming soon with more details. For example, practical tips & tricks about our process in my teams.
 
-*If you have some specific ideas or questions,
-feel free to create an issue and I'll try to include it.*
+*If you have some specific ideas or questions, feel free to create an issue and I'll try to include it.*
