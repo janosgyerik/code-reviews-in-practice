@@ -8,7 +8,7 @@ What is code review? How does it work? There are many interpretations, implement
 
 In this document I explain one way of doing it, that's simple, practical and has minimal administrative overhead. The benefits are cost savings, improved quality of code, improved collaboration and team morale.
 
-My goal with this document is to become a handbook that anybody can use to implement the practices of code reviews in their teams efficiently, to realize its benefits easily.
+My goal for this document is to become a handbook that anybody can use to implement the practices of code reviews in their teams efficiently, to realize its benefits easily.
 
 What is code review?
 --------------------
