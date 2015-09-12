@@ -2,7 +2,7 @@ Code reviews in practice
 ========================
 
 *This is a work in progress.*
-*If you have some specific ideas or questions, feel free to create an issue and I'll try to include it.*
+*If you have some specific ideas or questions, feel free to [create an issue](https://github.com/janosgyerik/code-reviews-in-practice/issues) and I'll try to include it. Pull requests are also welcome!*
 
 What is code review? How does it work? There are many interpretations, implementations and misconceptions.
 
@@ -79,4 +79,4 @@ To be continued...
 
 More sections are coming soon with more details. For example, practical tips & tricks about our process in my teams.
 
-*If you have some specific ideas or questions, feel free to create an issue and I'll try to include it.*
+*If you have some specific ideas or questions, feel free to [create an issue](https://github.com/janosgyerik/code-reviews-in-practice/issues) and I'll try to include it. Pull requests are also welcome!*
