@@ -4,16 +4,16 @@ Code reviews in practice
 *This is a work in progress.*
 *If you have some specific ideas or questions, feel free to [create an issue](https://github.com/janosgyerik/code-reviews-in-practice/issues) and I'll try to include it. [Pull requests](https://github.com/janosgyerik/code-reviews-in-practice) are also welcome!*
 
-What is code review? How does it work? There are many interpretations, implementations and misconceptions.
+What is a code review? How does it work? There are many interpretations, implementations and misconceptions.
 
 In this document I explain one way of doing it, that's simple, practical and has minimal administrative overhead. The benefits are cost savings, improved quality of code, improved collaboration and team morale.
 
-My goal for this document is to become a handbook that anybody can use to implement the practices of code reviews in their teams efficiently, to realize its benefits easily.
+My goal is for this document to become a handbook that anybody can use to implement the practices of code reviews in their teams efficiently, and to realize its benefits easily.
 
 What is code review?
 --------------------
 
-In the context of this document, code review is about getting your changes reviewed by another programmer before merging it into the main code base of a project. Ideally the reviewer is on the same team and has a good understanding of the project. But it could be any other programmer. It's crucial to have *somebody else* review your work. There can be multiple reviewers, but there should be at least one.
+In the context of this document, code review is about getting your changes reviewed by another programmer before merging it into the main code-base of a project. Ideally the reviewer is in the same team and has a good understanding of the project. But it could be any other programmer. It's crucial to have *somebody else* review your work. There can be multiple reviewers, but there should be at least one.
 
 The review is an iterative process: the reviewer suggests improvements, you make corrections, and the reviewer checks again. Repeat until the code looks good enough (to the reviewer).
 
@@ -44,7 +44,7 @@ Some common misconceptions:
 
 - Myth: "we don't have time for code reviews". To understand the time cost of code reviews, you need to consider the long-term effects. Correcting bugs released in production can be extremely expensive. Code reviews are known to be an effective method to catch bugs early. They also help catching conceptual errors early, which would be extremely expensive to correct later. Code reviews have many other positive effects that feed back to cost savings. Overall, code reviews save far more time than they cost.
 
-- Myth: "code review is just too hard to do, because it's impossible to review large changesets". The problem is not with the idea of code reviews, but with the changesets. Such changesets indicate incorrect use of feature branches. Keep changesets to manageable size.
+- Myth: "code review is just too hard to do, because it's impossible to review large changesets". The problem is not with the idea of code reviews, but with the changesets. Such changesets indicate incorrect use of feature branches. Keep changesets to a manageable size.
 
 - Myth: "doing code reviews slows down development, because the reviewer keeps the developer waiting". No, the developers shouldn't wait for the review. They should know how to work on another branch. The other branch may be a continuation of the branch pending review.
 
@@ -53,7 +53,7 @@ Some common misconceptions:
 Is my team ready for code reviews?
 ----------------------------------
 
-It's important to evaluate the readiness of your team first. Trying to push code reviews may fail spectacularly if the team is not yet following certain good practices.
+It's important to evaluate the readiness of your team first. Trying to push code reviews may fail spectacularly if the team is not yet following certain good practices:
 
 - One commit == one logical change. Developers should have the good sense to commit each logical step by step, going from stable build to stable build. Try to educate the team: committing this way is widely recommended.
 
@@ -72,7 +72,7 @@ I was most inspired by these articles:
 
 - [Code Reviews: Just Do It](http://blog.codinghorror.com/code-reviews-just-do-it/)
 - [Pair Programming vs. Code Reviews](http://blog.codinghorror.com/pair-programming-vs-code-reviews/)
-- [Code Complete 2: Chapter 28: Managing Contruction](http://www.cc2e.com/)
+- [Code Complete 2: Chapter 28: Managing Construction](http://www.cc2e.com/)
 
 To be continued...
 ------------------
