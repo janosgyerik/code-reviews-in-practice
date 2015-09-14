@@ -10,8 +10,8 @@ In this document I explain one way of doing it, that's simple, practical and has
 
 My goal is for this document to become a handbook that anybody can use to implement the practices of code reviews in their teams efficiently, and to realize its benefits easily.
 
-What is code review?
---------------------
+What is a code review?
+----------------------
 
 In the context of this document, code review is about getting your changes reviewed by another programmer before merging it into the main code-base of a project. Ideally the reviewer is in the same team and has a good understanding of the project. But it could be any other programmer. It's crucial to have *somebody else* review your work. There can be multiple reviewers, but there should be at least one.
 
