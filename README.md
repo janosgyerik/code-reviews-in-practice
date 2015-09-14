@@ -8,7 +8,7 @@ What is a code review? How does it work? There are many interpretations, impleme
 
 In this document I explain one way of doing it, that's simple, practical and has minimal administrative overhead. The benefits are cost savings, improved quality of code, improved collaboration and team morale.
 
-My goal is for this document to become a handbook that anybody can use to implement the practices of code reviews in their teams efficiently, and to realize its benefits easily.
+My goal is for this document to become a handbook that anybody can use to implement the practice of code reviews in their teams efficiently, and to realize its benefits easily.
 
 What is a code review?
 ----------------------
@@ -22,9 +22,9 @@ The code review workflow
 
 In a nutshell:
 
-- The project advances forward through short-lived feature branches.
+- The project advances forward through short-lived feature branches. This working style is a pre-requisite.
 
-- You implement a specific change in a series of commits on a dedicated feature branch, and propose it for merging to another developer.
+- You implement a specific change in a series of commits on a dedicated feature branch, and propose it to another developer for merging.
 
 - The other developer reviews the changeset, and suggests improvements by leaving comments on specific lines, or on the changeset as a whole.
 
