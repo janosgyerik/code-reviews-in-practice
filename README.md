@@ -96,7 +96,7 @@ It's important to evaluate the readiness of your team first. Trying to push code
 
 - Using distributed version control system. Without a distributed version control system, branch management might be too hard to be practical. Try to migrate your tools to any of the well-known distributed VCS.
 
-- Developers are open-minded, curious, and willing to learn from their peers. They can take their egos out of the equation, able to both give and take constructive criticism. Reading Chapter 33 in Code Complete might help achieving that.
+- Developers are open-minded, curious, and willing to learn from their peers. They can take their egos out of the equation, able to both give and take constructive criticism. Reading [Chapter 33 in Code Complete][cc2] might help achieving that.
 
 Without the above, code reviews are unlikely to work well. Try to get the above issues out of the way. Rest assured, these are all recommended and widely accepted practices that any project would benefit from, regardless of using code reviews or not. Be patient and calm, keep pushing, inching forward step by step.
 
@@ -107,7 +107,7 @@ I was most inspired by these articles:
 
 - [Code Reviews: Just Do It](http://blog.codinghorror.com/code-reviews-just-do-it/)
 - [Pair Programming vs. Code Reviews](http://blog.codinghorror.com/pair-programming-vs-code-reviews/)
-- [Code Complete 2: Chapter 28: Managing Construction](http://www.cc2e.com/)
+- [Code Complete 2: Chapter 28: Managing Construction][cc2]
 
 To be continued...
 ------------------
@@ -115,3 +115,5 @@ To be continued...
 More sections are coming soon with more details. For example, practical tips & tricks about our process in my teams.
 
 *If you have some specific ideas or questions, feel free to [create an issue](https://github.com/janosgyerik/code-reviews-in-practice/issues) and I'll try to include it. [Pull requests](https://github.com/janosgyerik/code-reviews-in-practice) are also welcome!*
+
+[cc2]: http://www.cc2e.com/
