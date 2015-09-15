@@ -30,6 +30,28 @@ The practice of code reviews can bring great benefits:
 
 - Improved collaboration and team morale: the review process requires multiple developers to work together. The process improves confidence in their own work and that of their peers.
 
+What are the challenges in implementing code reviews?
+-----------------------------------------------------
+
+The workflow presented in the next section addresses these main challenges:
+
+- How to avoid slowing down development?
+- What tools can make it easy and how?
+
+Other questions can be answered easily:
+
+- Should you review very small changesets that seem trivial?
+  + Yes! There's a lot of empirical evidence of single-line changes causing massive failures.
+
+- How often to perform, and how much code to cover at a time?
+  + Work on feature branches, and keep them small enough for reasonably easy reviewing. Too small changesets are not very interesting, too big changesets are too hard to review.
+
+- How deeply should you inspect the code?
+  + It depends on the project or the task in question. If you have an intuition that you should go deeper but don't have enough time, then ask another developer to continue.
+
+- How to deal with disagreement between author and reviewer?
+  + Try to find objective evidence. Avoid religious issues. Ask a third person and let his be the decisive vote.
+
 The code review workflow
 ------------------------
 
