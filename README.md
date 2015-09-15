@@ -2,6 +2,7 @@ Code reviews in practice
 ========================
 
 *This is a work in progress.*
+
 *If you have some specific ideas or questions, feel free to [create an issue](https://github.com/janosgyerik/code-reviews-in-practice/issues) and I'll try to include it. [Pull requests](https://github.com/janosgyerik/code-reviews-in-practice) are also welcome!*
 
 What is a code review? How does it work? There are many interpretations, implementations and misconceptions.
@@ -15,7 +16,7 @@ What is a code review?
 
 In the context of this document, code review is about getting your changes reviewed by another programmer before merging it into the main code-base of a project. Ideally the reviewer is in the same team and has a good understanding of the project. But it could be any other programmer. It's crucial to have *somebody else* review your work. There can be multiple reviewers, but there should be at least one.
 
-The review is an iterative process: the reviewer suggests improvements, you make corrections, and the reviewer checks again. Repeat until the code looks good enough (to the reviewer).
+Code review is an iterative process: the reviewer suggests improvements, you make corrections as appropriate, and the reviewer checks again. Repeat until the code looks good enough.
 
 What benefits can you expect?
 -----------------------------
@@ -65,7 +66,7 @@ In a nutshell:
 
 - Following the suggestions, you improve the changeset and push the new commits for another round of review.
 
-- The review + corrections cycle repeats until the reviewer is satisfied, and accepts the changeset into mainline.
+- The review + corrections cycle is repeated until the reviewer is satisfied, and accepts the changeset by merging it into mainline.
 
 Some crucial points:
 
@@ -73,15 +74,15 @@ Some crucial points:
 
 - It's important to use a tool like GitHub, GitLab, or similar, where commenting on specific lines is easy, with a user-friendly interface.
 
-- The review process should not hold up development. You can work on another branch while waiting for the review. This implies that developers should be comfortable with working on multiple branches in parallel.
+- The review process should not hold up development. You can work on another branch while waiting for the review. This implies that developers are comfortable with working on multiple branches in parallel.
 
 Some common misconceptions:
 
-- Myth: *"we don't have time for code reviews"*. To understand the time cost of code reviews, you need to consider the long-term effects. Correcting bugs released in production can be extremely expensive. Code reviews are known to be an effective method to catch bugs early. They also help catching conceptual errors early, which would be extremely expensive to correct later. Code reviews have many other positive effects that feed back to cost savings. Overall, code reviews save far more time than they cost.
+- Myth: *"we don't have time for code reviews"*. To understand the time cost of code reviews, you need to consider the long-term effects. Correcting bugs released in production can be extremely expensive. Code reviews are known to be an effective method to catch bugs early. They also help catching conceptual errors early, which may be extremely expensive to correct later. Code reviews can have many other positive effects that feed back to cost savings. Overall, code reviews save far more time than they cost.
 
 - Myth: *"code review is just too hard to do, because it's impossible to review large changesets"*. The problem is not with the idea of code reviews, but with the changesets. Such changesets indicate incorrect use of feature branches. Keep changesets to a manageable size.
 
-- Myth: *"doing code reviews slows down development, because the reviewer keeps the developer waiting"*. No, the developers shouldn't wait for the review. They should know how to work on another branch. The other branch may be a continuation of the branch pending review.
+- Myth: *"doing code reviews slows down development, because the reviewer keeps the developer waiting"*. A developer shouldn't wait for the reviewer. The developer should know how to work on another branch while a another review is pending. Sometimes the other branch can be a continuation of the branch pending review.
 
 - Myth: *"it's impossible to read diffs"*. It's not impossible. It may take a couple of days, but you can get used to it.
 
@@ -90,15 +91,15 @@ Is my team ready for code reviews?
 
 It's important to evaluate the readiness of your team first. Trying to push code reviews may fail spectacularly if the team is not yet following certain good practices:
 
-- One commit == one logical change. Developers should have the good sense to commit each logical step by step, going from stable build to stable build. Try to educate the team: committing this way is widely recommended.
+- One commit == one logical change. Developers should have the good sense to commit improvements in small logical steps. Not too big, not too small. Through these steps, development can move forward in stable increments. Try to transition the team to this working style.
 
 - Development advances forward through short-lived feature branches. Feature branches are the crucial unit of work in the workflow outlined above. Try to transition the team to this working style.
 
-- Using distributed version control system. Without a distributed version control system, branch management might be too hard to be practical. Try to migrate your tools to any of the well-known distributed VCS.
+- Using distributed version control system. Without a distributed version control system, branch management might be too hard to be practical. Try to migrate your project and tools to any of the well-known distributed version control systems.
 
 - Developers are open-minded, curious, and willing to learn from their peers. They can take their egos out of the equation, able to both give and take constructive criticism. Reading [Chapter 33 in Code Complete][cc2] might help achieving that.
 
-Without the above, code reviews are unlikely to work well. Try to get the above issues out of the way. Rest assured, these are all recommended and widely accepted practices that any project would benefit from, regardless of using code reviews or not. Be patient and calm, keep pushing, inching forward step by step.
+Without the above, code reviews are unlikely to work well. Try to get the above issues out of the way first. Rest assured, these are all recommended and widely accepted practices that any project would benefit from, regardless of using code reviews or not. Be patient and calm, keep pushing, inching forward step by step.
 
 Resources
 ---------
