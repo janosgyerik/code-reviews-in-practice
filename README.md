@@ -17,6 +17,19 @@ In the context of this document, code review is about getting your changes revie
 
 The review is an iterative process: the reviewer suggests improvements, you make corrections, and the reviewer checks again. Repeat until the code looks good enough (to the reviewer).
 
+What benefits can you expect?
+-----------------------------
+
+The practice of code reviews can bring great benefits:
+
+- Catch construction bugs early: fixing a bug in production can be very expensive. Code reviews can prevent bugs from getting released by catching them early.
+
+- Catch class design bugs early: poorly designed classes and methods can lead to unmaintainable spaghetti code. Code reviews can prevent long-term code rot by catching bad tendencies early.
+
+- Improved collective knowledge about the code-base of the project: thanks to the review process, at least two developers understand every piece of code in the code-base.
+
+- Improved collaboration and team morale: the review process requires multiple developers to work together. The process improves confidence in their own work and that of their peers.
+
 The code review workflow
 ------------------------
 
