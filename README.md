@@ -77,13 +77,13 @@ Some crucial points:
 
 Some common misconceptions:
 
-- Myth: "we don't have time for code reviews". To understand the time cost of code reviews, you need to consider the long-term effects. Correcting bugs released in production can be extremely expensive. Code reviews are known to be an effective method to catch bugs early. They also help catching conceptual errors early, which would be extremely expensive to correct later. Code reviews have many other positive effects that feed back to cost savings. Overall, code reviews save far more time than they cost.
+- Myth: *"we don't have time for code reviews"*. To understand the time cost of code reviews, you need to consider the long-term effects. Correcting bugs released in production can be extremely expensive. Code reviews are known to be an effective method to catch bugs early. They also help catching conceptual errors early, which would be extremely expensive to correct later. Code reviews have many other positive effects that feed back to cost savings. Overall, code reviews save far more time than they cost.
 
-- Myth: "code review is just too hard to do, because it's impossible to review large changesets". The problem is not with the idea of code reviews, but with the changesets. Such changesets indicate incorrect use of feature branches. Keep changesets to a manageable size.
+- Myth: *"code review is just too hard to do, because it's impossible to review large changesets"*. The problem is not with the idea of code reviews, but with the changesets. Such changesets indicate incorrect use of feature branches. Keep changesets to a manageable size.
 
-- Myth: "doing code reviews slows down development, because the reviewer keeps the developer waiting". No, the developers shouldn't wait for the review. They should know how to work on another branch. The other branch may be a continuation of the branch pending review.
+- Myth: *"doing code reviews slows down development, because the reviewer keeps the developer waiting"*. No, the developers shouldn't wait for the review. They should know how to work on another branch. The other branch may be a continuation of the branch pending review.
 
-- Myth: "it's impossible to read diffs". It's not impossible. It may take a couple of days, but you can get used to it.
+- Myth: *"it's impossible to read diffs"*. It's not impossible. It may take a couple of days, but you can get used to it.
 
 Is my team ready for code reviews?
 ----------------------------------
