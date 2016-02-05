@@ -9,6 +9,18 @@ Philosophy
 Markdown is meant to make plain-text documents structured and look good.
 Easy to read, easy to write, simple, even without fancy rendering.
 
+Guiding principles:
+
+- Redability
+- Semanting correctness
+- Simplicity
+- Compatibility
+
+5 equivalent ways of writing a document title:
+
+    Document    Document    Document    # Document  #Document
+    =           ===         ========
+
 Headings
 --------
 
