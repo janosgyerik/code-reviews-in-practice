@@ -3,6 +3,79 @@ Writing markdown well
 
 *Note: work in progress, heavily...*
 
+Most important messages.
+Explain all.
+Add relevant examples of alternative ways,
+and explain why they are inferior.
+Add examples of common mistakes.
+
+- headings
+  - use `====`, `----` and `###` for headings
+  - use `====` style instead of `#`
+  - use `----` style instead of `#`
+  - don't use lower level than `###`
+  - pay attention to semantics
+
+- inline // -> move to concept category, "inline" not interesting
+  - when to use backticks
+  - when to use `*`
+  - when to use `**`
+
+- simplicity
+  - don't use deeply nested, tricky structures
+  - don't use html
+  - don't use `&amp;` etc
+  - don't use line breaks (two space at end of line)
+
+- readability
+  - horizontal spacing
+    + space before starting `*` and after closing `*`
+  - vertical spacing
+    + empty line between heading and body
+    + empty line between paragraph and list
+    + empty line around horizontal rule
+  - prefer `====` and `----` for headings
+  - prefer indented code blocks over fenced code blocks
+  - number properly in numbered lists
+  - break lines between list items if too long
+  - align list items
+  - use different symbol at different levels // matter of taste
+  - use horizontal rules in consistent format
+  - prefer `*` over `_`
+  - don't use `_` for horizontal rule
+
+- compatibility
+  - prefer indented code blocks over fenced code blocks
+  - don't use below `###`
+
+- links
+  - prefer `[title][name]` + reference over inline `[title](link)`
+
+- summary of recommendations against daring fireball
+  - don't use HTML
+  - don't bother escaping HTML entities such as `&amp;` etc
+  - don't use line breaks (two space at end of line)
+  - don't use below `###`
+  - don't use fenced code blocks
+  - number properly in numbered lists
+  - don't be lazy
+  - don't put code blocks inside lists
+  - indent with 4 spaces instead of tabs
+
+- publisher rules
+  - paragraph between heading and sub-heading or list
+  - `*` for keywords, key terms, on first occurrence only
+
+- semantics
+  - use headings right
+  - forget italic and bold, think emphasis and important
+  - use `*` and `**` and backticks right
+
+- lazyness
+  - don't bother closing `###` headers
+  - `---` seems perfectly reasonable for horizontal rules
+  - `-` easiest to write as bullet
+
 Philosophy
 ----------
 
