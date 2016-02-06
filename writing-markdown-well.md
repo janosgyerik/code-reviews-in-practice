@@ -16,10 +16,37 @@ Guiding principles:
 - Simplicity
 - Compatibility
 
+TODO: maybe instead of the following intro sub-sections,
+just go ahead with the final text.
+
+### Readability
+
 5 equivalent ways of writing a document title:
 
     Document    Document    Document    # Document  #Document
     =           ===         ========
+
+Which is the most readable?
+
+---
+
+Valid markdown examples, but which one is easier to read?
+
+    -Requirements
+    -Building
+    -Running
+
+### Semantic correctness
+
+TODO
+
+### Simplicity
+
+TODO
+
+### Compatibility
+
+TODO
 
 Headings
 --------
