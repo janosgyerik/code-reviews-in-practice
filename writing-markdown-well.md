@@ -3,6 +3,50 @@ Writing markdown well
 
 *Note: work in progress, heavily...*
 
+---
+
+Markdown is important because it's used everywhere.
+
+TODO: 3 images of sites that use it, side by side, with some sample markdown + rendered, easily identifiable
+
+Every decent project should have at least a `README.md` file.
+
+TODO: 2 images from GitHub create new project screen 1 and 2
+
+It's also a great format for documentation.
+
+Common mistakes when writing in Markdown:
+
+TODO: the coding-horror image; + acknowledgement at the bottom
+
+- Looks good when rendered as HTML, but looks crap as plain text
+
+- Semantic violations of headings and inline formatting styles
+
+- Overly complicated nested structures
+
+- Using non-standard features, lock-in to specific renderers
+
+- Other minor writing style issues
+
+Markdown as plain text
+----------------------
+
+Markdown was designed to be nicely readable as plain text. (See [daringfireball][])
+
+You may not normally read it in plain text form, but occasionally you might.
+
+Other readers might read your documents in plain text,
+understandably, as the format was designed for that.
+
+When you update the document later, most probably you have to work with the plain text form.
+
+Which of these documents would you rather work with?
+
+TODO: 2 examples side by side, in plain-text form, first crap second pretty
+
+---
+
 Most important messages.
 Explain all.
 Add relevant examples of alternative ways,
@@ -16,7 +60,7 @@ Add examples of common mistakes.
   - don't use lower level than `###`
   - pay attention to semantics
 
-- inline // -> move to concept category, "inline" not interesting
+- semantic correctness
   - when to use backticks
   - when to use `*`
   - when to use `**`
