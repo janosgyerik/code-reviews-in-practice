@@ -49,10 +49,11 @@ Creating the merge request
     git push origin HEAD
 
 Review the **Changes** tab before assigning the merge request.
-=>
+=> It's the final safety net for catching odd changes that should not have been committed.  
+=> Code review horror: a 1000 lines diff, too many changes for GitLab to show at once.
 
 Mark with `WIP: ` or `[WIP] ` prefix a branch that is not ready for review.
-=> 
+=> It's a waste of time to review something that's still a work in progress and might be heavily rewritten
 
 
 Reviewing the merge request
