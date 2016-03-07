@@ -53,7 +53,9 @@ Review the **Changes** tab before assigning the merge request.
 => Code review horror: a 1000 lines diff, too many changes for GitLab to show at once.
 
 Mark with `WIP: ` or `[WIP] ` prefix a branch that is not ready for review.
-=> It's a waste of time to review something that's still a work in progress and might be heavily rewritten
+=> It's a waste of time to review something that's still a work in progress and might be heavily rewritten.  
+=> Code review horror: after you reviewed a difficult changeset, the author pushes 10 more commits that completely change the implementation strategy, invalidating your review.  
+=> Code review horror: after you point out obvious problems in the code, the author tells you that "he knows", the code so far was just a temporary step, he was just about to do some cleaning up of exactly the things you pointed out.
 
 
 Reviewing the merge request
