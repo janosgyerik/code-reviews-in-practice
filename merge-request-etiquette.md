@@ -23,7 +23,7 @@ Each example starts with a clear statement (recommendation),
 followed by an explanation or justification,
 followed by examples (from real life!) of what can go wrong,
 labeled *Code Review Horror*.
-You will do well to avoid these!
+You will do well to avoid these *merge request smells*!
 
 Before creating a branch
 ------------------------
