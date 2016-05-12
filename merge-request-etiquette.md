@@ -71,8 +71,13 @@ Code Review Horror: a single commit containing a bugfix... and a new feature... 
 Every commit should have a descriptive log message.
 
 It's hard to review commits with empty or unhelpful log message.
+Furthermore, Git recommends the following:
 
-Code Review Horror: commit messages like "fix", "refactoring", ".", "" (no message)
+> Though not required, it's a good idea to begin the commit message with
+> a single short (less than 50 character) line summarizing the change,
+> followed by a blank line and then a more thorough description.
+
+Code Review Horror: commit messages like "fix", "refactoring", ".", "" (no message), "again", "re"
 
 ---
 
