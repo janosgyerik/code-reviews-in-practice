@@ -3,12 +3,23 @@ Merge Request etiquette
 
 *Note: work in progress, incomplete*
 
-Merge Request in GitLab = Pull Request in GitHub = X in your favorite repo manager tool Y.
+*Merge Request* in GitLab is equivalent to *Pull Request* in GitHub.
+For simplicity I will use only Merge Request consistently in this document.
+Please translate it to the appropriate equivalent in your toolbox.
 
-The purpose of Merge Requests is reviewing changesets.
-Reviewing changesets can be a nightmare if you don't follow some rules.
+The purpose of Merge Requests is reviewing changesets,
+in order to find problems, such as bugs, careless mistakes, bad practices.
+It's a good way to guide less experienced programmers.
+It's an effective way to make all programmers on the team better,
+bringing everybody up to the same high level.
 
-Several stages to go through.
+How to benefit the most from using Merge Requests?
+Some developers think that Merge Requests take too much time.
+That's only true when not done well.
+
+This document is a listing of bad examples, taken from real life,
+labeled "Code Review Horror", and how to avoid them.
+The examples are grouped by stages in the typical lifecycle of a feature branch.
 
 Before creating a branch
 ------------------------
