@@ -33,7 +33,7 @@ The branch should have a clear purpose.
 It's hard to review a changeset with many unrelated changes.
 Take a moment to think carefully before diving head first into coding.
 
-Code Review Horror: a large changeset with a bugfix, and a new feature, and a refactoring, and coding style changes, all in one.
+Code Review Horror: a large changeset containing a bugfix... and a new feature... and a refactoring... and coding style changes... all in one.
 
 ---
 
@@ -50,21 +50,21 @@ Code Review Horror: a large changeset with 1000+ lines in 100+ files
 
 The branch should start from the latest version of the source code.
 
+    git fetch origin master
+    git checkout -b descriptive-name origin/master
+
 The risk of conflicts is higher if the branch is based on outdated code.
 
 Code Review Horror: a new branch based on code from 6 months ago, pre-dating a large refactoring 2 months ago
 
-    git fetch origin master
-    git checkout -b descriptive-name origin/master
-
 Working on the branch
 ---------------------
 
-One commit should be about one logical change.
+Commits should be atomic: perform a single logical change.
 
 It's hard to review commits with multiple unrelated changes.
 
-Code Review Horror: a single commit with a bugfix, a new feature, a refactoring, and coding style changes, all in one.
+Code Review Horror: a single commit containing a bugfix... and a new feature... and a refactoring... and coding style changes... all in one.
 
 ---
 
