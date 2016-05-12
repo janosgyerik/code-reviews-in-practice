@@ -17,9 +17,13 @@ How to benefit the most from using merge requests?
 Some developers think that merge requests take too much time.
 That's only true when not done well.
 
-This document is a listing of bad examples, taken from real life,
-labeled *Code Review Horror*, and how to avoid them.
-The examples are grouped by stages in the typical lifecycle of a feature branch.
+This document is a listing of practical tips and recommendations,
+grouped by stages in the typical lifecycle of a feature branch.
+Each example starts with a clear statement (recommendation),
+followed by an explanation or justification,
+followed by examples (from real life!) of what can go wrong,
+labeled *Code Review Horror*.
+You will do well to avoid these!
 
 Before creating a branch
 ------------------------
