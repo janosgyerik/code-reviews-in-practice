@@ -30,15 +30,19 @@ Before creating a branch
 
 The branch should have a clear purpose.
 
-It's hard to review a changeset with multiple unrelated changes.
+It's hard to review a changeset with many unrelated changes.
+Take a moment to think carefully before diving head first into coding.
 
-Code Review Horror: a large changeset with a bugfix, a new feature, a refactoring, and coding style changes, all in one.
+Code Review Horror: a large changeset with a bugfix, and a new feature, and a refactoring, and coding style changes, all in one.
 
 ---
 
-The purpose should not be too big.
+The purpose of the branch should not be too big.
 
-It's hard to review a changeset of a 1000+ lines.
+When a changeset grows to (and beyond) 200+ changed lines in 20+ files,
+it can become extremely difficult to review and understand.
+If it's not possible to divide a purpose to smaller logical steps,
+at least try to divide to stable stages.
 
 Code Review Horror: a large changeset with 1000+ lines in 100+ files
 
