@@ -83,9 +83,12 @@ Code Review Horror: commit messages like "fix", "refactoring", ".", "" (no messa
 
 Review the diff before committing.
 
+Be careful to not commit irrelevant, unnecessary changes.
+When unintended, irrelevant changes slip into the feature branch,
+it can be distracting and confusing for reviewers.
 It's a waste of time to review irrelevant changes that should not have been committed.
 
-Code Review Horror: a 100 lines diff with 99 line ending changes and one bugfix hidden somewhere in there
+Code Review Horror: a 100 lines diff with 90+ line ending changes and one bugfix hidden somewhere within
 
 Creating the merge request
 --------------------------
