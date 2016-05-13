@@ -93,13 +93,20 @@ Code Review Horror: a 100 lines diff with 90+ line ending changes and one bugfix
 Creating the merge request
 --------------------------
 
-    git push origin HEAD
-
 Review the **Changes** tab before assigning the merge request.
+(Optionally, assign the merge request to yourself, temporarily.)
 
-It's the final safety net for catching odd changes that should not have been committed.
+Just like it's good to review the diff before every commit,
+it's good to re-review the changes of the complete branch.
+Do a self-review.
+Look for bugs you overlooked.
+Look for corner cases not handled.
+Look for unrelated changes that were accidentally included.
+Look for pointless changes that were accidentally included.
+Is the code readable? Is the changeset reasonably small enough to review?
+Make any necessary fixes and only assign the branch when it's ready.
 
-Code Review Horror: a 1000 lines diff, too many changes for GitLab to show at once.
+Code Review Horror: a 1000 lines diff, with too many changes to diplay in the web interface, with a hodge-podge of unrelated changes, unnecessary changes, riddled with bugs and bad practices.
 
 ---
 
