@@ -111,8 +111,11 @@ Code Review Horror: a 1000 lines diff, with too many changes to diplay in the we
 ---
 
 Mark with `WIP: ` or `[WIP] ` prefix a branch that is not ready for review.
+(Alternatively, assign the merge request to yourself, temporarily.)
 
-It's a waste of time to review something that's still a work in progress and might be heavily rewritten.
+If a merge request is not ready,
+you may not want others to look at it yet,
+or at least give some kind of signal that it may be changed or even rewritten.
 
 Code Review Horror: after you reviewed a difficult changeset, the author pushes 10 more commits that completely change the implementation strategy, invalidating your review.
 
