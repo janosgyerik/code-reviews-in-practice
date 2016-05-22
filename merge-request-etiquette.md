@@ -127,54 +127,78 @@ Reviewing the merge request
 Try to review merge requests you receive ASAP.
 
 The risk of conflicts is higher if the branch becomes outdated.
+The cost of task switching (for the author) is higher the next day,
+and even higher later.
 
 Code Review Horror: by the time your merge request is reviewed, other changes in the project put the branch in conflict.
 
+Code Review Horror: by the time your merge request is reviewed, you already forgot what the merge request was about, and it's hard to refresh your memory.
+
 ---
 
-When you're done reviewing, leave a comment in the **Discussion** tab.
+When you're done reviewing, leave a comment in the **Discussion** tab, so that the author knows that the ball is in his court.
 
 Without an explicit signal, it's not clear when the reviewer is done reviewing.
 
-Code Review Horror: the coder is waiting for the reviewer, who's waiting for the coder to make corrections...
+Code Review Horror: the coder is waiting for the reviewer to finish reviewing, while at the same time the reviewer is waiting for the coder to make corrections...
 
 ---
 
 Try to make the requested corrections ASAP.
 
 The risk of conflicts is higher if the branch becomes outdated.
+After you are done with corrections,
+the reviewer has to review again.
+If you let too much time pass,
+the cost of task switching for the reviewer will increase.
 
-Code Review Horror: by the time the corrections are done, you already forgot what the merge request was about.
+Code Review Horror: by the time the corrections are done, you already forgot what the merge request was about and it's hard to refresh your memory.
 
 ---
 
 When you're done making corrections, don't forget to `git push`.
 
-Without pushing, the corrections are not visible to anybody else.
+Without pushing, the corrections are only on your computer, not visible anybody else.
 
-Code Review Horror: the reviewer is waiting for the coder to make corrections, who's waiting for the reviewer to review...
+Code Review Horror: the coder thinks he's done, and waiting for the reviewer, but the corrections are not even visibile yet, as they only exist on the coder's computer.
 
 ---
 
 When you're done making corrections, leave a comment in the **Discussion** tab.
 
-Without an explicit signal, it's not clear when the coder is done making corrections.
+GitLab doesn't send a notification to reviewers on new pushes to the branch.
+And that's normal, because a push doesn't necessarily mean that the branch is ready for the next round of review.
+Only the author can know that, so without an explicit signal by the author,
+the reviewer cannot know that the branch is ready for the next round of review.
 
-Code Review Horror: the reviewer is waiting for the coder to make corrections, who's waiting for the reviewer to review...
+Code Review Horror: the reviewer is waiting for the coder to make corrections, while at the same time the coder is waiting for the reviewer to review...
 
 ---
 
-Don't make changes to the branch before the review process is completed.
+Don't make changes to the branch while the review is in progress.
 
-It's a waste of time to review a branch again and again because changes keep coming.
+It's not practical to review something that is still changing.
+A change might invalidate some comments of the reviewer, making it a waste of time.
+After reviewing the entire changeset, if something changes in the middle,
+there's no easy way to review only the significant part,
+the reviewer is typically forced to re-read the entire changeset,
+which is a waste of time.
 
 Code Review Horror: after reviewing 200+ lines of heavy refactoring, the coder tells you he pushed "just one more" feature.
+
+Code Review Horror: while commenting on an approach, a new commit comes in that changes the approach, invalidating your comment.
 
 ---
 
 Avoid lengthy cycles with more than 3 rounds of reviews and corrections.
 
-TODO why
+After about 3 cycles of reviews and corrections,
+both the coder and the reviewer start to get fatigued by the merge request.
+This can lead to mistakes and strain the relationship.
+If there are only minor issues with the merge request,
+suggest to postpone corrections to a new "cleanup branch".
+If there are serious issues with the merge request,
+consider to reject and ask for rework from scratch.
 
 TODO Code Review Horror
 
@@ -182,7 +206,11 @@ TODO Code Review Horror
 
 The reviewer should not insist on perfection.
 
-TODO why
+If the author has made some corrections,
+the code review process has already served its purpose,
+improving on the original work.
+If the code is already good enough,
+the cost of further improvements toward perfection might be too high compared to the benefits to gain.
 
 TODO Code Review Horror
 
