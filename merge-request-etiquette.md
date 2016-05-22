@@ -117,9 +117,9 @@ If a merge request is not ready,
 you may not want others to look at it yet,
 or at least give some kind of signal that it may be changed or even rewritten.
 
-Code Review Horror: after you reviewed a difficult changeset, the author pushes 10 more commits that completely change the implementation strategy, invalidating your review.
+Code Review Horror: after you reviewed a difficult changeset, the coder pushes 10 more commits that completely change the implementation strategy, invalidating your review.
 
-Code Review Horror: after you point out obvious problems in the code, the author tells you that "he knows", the code so far was just a temporary step, he was just about to do some cleaning up of exactly the things you pointed out.
+Code Review Horror: after you point out obvious problems in the code, the coder tells you that "he knows", the code so far was just a temporary step, he was just about to do some cleaning up of exactly the things you pointed out.
 
 Reviewing the merge request
 ---------------------------
@@ -127,7 +127,7 @@ Reviewing the merge request
 Try to review merge requests you receive ASAP.
 
 The risk of conflicts is higher if the branch becomes outdated.
-The cost of task switching (for the author) is higher the next day,
+The cost of task switching (for the coder) is higher the next day,
 and even higher later.
 
 Code Review Horror: by the time your merge request is reviewed, other changes in the project put the branch in conflict.
@@ -136,7 +136,7 @@ Code Review Horror: by the time your merge request is reviewed, you already forg
 
 ---
 
-When you're done reviewing, leave a comment in the **Discussion** tab, so that the author knows that the ball is in his court.
+When you're done reviewing, leave a comment in the **Discussion** tab, so that the coder knows that the ball is in his court.
 
 Without an explicit signal, it's not clear when the reviewer is done reviewing.
 
@@ -168,7 +168,7 @@ When you're done making corrections, leave a comment in the **Discussion** tab.
 
 GitLab doesn't send a notification to reviewers on new pushes to the branch.
 And that's normal, because a push doesn't necessarily mean that the branch is ready for the next round of review.
-Only the author can know that, so without an explicit signal by the author,
+Only the coder can know that, so without an explicit signal by the coder,
 the reviewer cannot know that the branch is ready for the next round of review.
 
 Code Review Horror: the reviewer is waiting for the coder to make corrections, while at the same time the coder is waiting for the reviewer to review...
@@ -206,7 +206,7 @@ TODO Code Review Horror
 
 The reviewer should not insist on perfection.
 
-If the author has made some corrections,
+If the coder has made some corrections,
 the code review process has already served its purpose,
 improving on the original work.
 If the code is already good enough,
