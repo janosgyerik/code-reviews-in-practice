@@ -25,6 +25,44 @@ followed by examples (from real life!) of what can go wrong,
 labeled *Code Review Horror*.
 You will do well to avoid these *merge request smells*!
 
+The ideal workflow
+------------------
+
+The ideal workflow on a branch would be something like this:
+
+1. You have an idea of an improvement or bugfix to implement. If the idea might be too big to review, you plan ahead to split it to smaller chunks, in multiple branches.
+
+2. You fetch the latest version of the upstream branch from version control.
+
+3. You run the automated tests, to verify that you're starting from a stable state, and also to make sure you know how to run them.
+
+4. You create a new branch with a descriptive name.
+
+5. You make stable changes that don't break the build.
+
+6. You make small atomic commits with one logical change at a time. Before the commit, you review the diff, and make sure that accidental, unintended, or unnecessary changes are not included. You write a good descriptive message for the commit, and following the recommendations of Git, such as using maximum 50 characters on the first line, optionally followed by a blank line and longer explanation.
+
+7. You pay attention as the size of the changeset increases. If it starts to look likely to grow too big for one review, you try to wrap it up to postpone the remaining work to further branches.
+
+8. You may push the branch to the central repository server at anytime for backup, to prevent loss of work in case of crashes or failures of the local PC.
+
+9. When the branch is ready for review, you polish it. Double-check that the name of the branch is good, improve it if necessary. Re-run the automated tests to verify you didn't break anything.
+
+10. You create a merge request and assign it to yourself. You review the complete changeset for any mistakes, accidental and unintended changes. If all looks good, you assign it to somebody. In the **Discussion** tab you may drop the names of other users (for example `@jack`), so that they also get a notification about the merge request and participate in the review.
+
+11. The reviewer tries to review the complete changeset and give feedback on the same day.
+
+12. The reviewer reviews the complete changeset. If the code is perfect, the reviewer ticks the checkbox to delete the branch after merging, and accepts the merge request.
+
+13. If some corrections are necessary, the reviewer adds comments on the appropriate lines. If there is a global problem with the changeset as a whole, the reviewer leaves a comment on the **Discussion** tab. The reviewer doesn't attack you, and only makes objective suggestions. The reviewer doesn't simply say "this is wrong", but suggests how to do it better. After reviewing the entire changeset, the reviewer leaves a comment on the **Discussion** tab to signal that it's your turn to make corrections.
+
+14. You review the suggestions, ideally on the same day. If you agree with a suggestion, you implemented it, comment and push. If you disagree, you respond to the comment. You don't attack the reviewer, you explain your point clearly. After you reacted to all the suggestions and pushed all the corrections, you leave a comment on the **Discussion** tab to signal that it's the reviewer's turn to re-review.
+
+15. You and the reviewer repeat the review-corrections-review cycle as long as necessary. You try to complete the process in as short time as possible, ideally on the same day. You avoid religious wars on minor coding style and formatting issues. You both recognize opinionated issues and make reasonable compromises. You both stay calm and objective throughout the process.
+
+There are no absolute rules, there may be other ideal paths.
+Adjust appropriately to your circumstances.
+
 Before creating a branch
 ------------------------
 
