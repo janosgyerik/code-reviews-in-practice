@@ -240,7 +240,15 @@ TODO Code Review Horror
 
 ---
 
-Avoid reviewing unassign or self-assigned merge requests.
+Avoid reviewing unassigned or self-assigned merge requests.
+
+TODO why
+
+TODO Code Review Horror
+
+---
+
+The reviewer should only comment on the branch, not add commits.
 
 TODO why
 
